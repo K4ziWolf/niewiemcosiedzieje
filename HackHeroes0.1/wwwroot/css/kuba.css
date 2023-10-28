@@ -1,0 +1,283 @@
+
+.btn-create-classes {
+    box-shadow: 3px 3px 3px black;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 15px;
+}
+
+    .btn-create-classes:hover {
+        transform: scale(1.05);
+        background-color: #4ba3b5;
+    }
+
+.class-menu, .student-card {
+    background-color: rgba(117, 69, 156, 0.685);
+    color: #333333 !important;
+    font-weight: bolder;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 30px !important;
+    border: 2px solid #333333;
+}
+
+    .class-menu:hover, .student-card:hover {
+        background-color: #bf9967;
+        transform: scale(1.05);
+    }
+
+.navbar-edit {
+    background-color: #484b6a;
+    margin-bottom: 30px !important;
+}
+
+.add-classes-btn {
+    text-decoration: none;
+    border: none;
+    font-size: 16px !important;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+}
+
+.your-classes-text {
+    font-weight: bolder;
+    font-size: 34px;
+    color: #333333;
+    margin: 15px 0;
+}
+
+.navbar-text {
+    font-size: 16px;
+    font-weight: bolder;
+    height: 40px;
+    transition: font-size 0.3s;
+    color: #FFFFFF;
+    background-color: transparent !important;
+    white-space: nowrap;
+}
+
+    .navbar-text:hover {
+        font-size: 18px;
+        height: 40px;
+    }
+
+.navbar-brand-mod {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#registerSubmit {
+    box-shadow: 3px 3px 3px black;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 15px;
+    background-color: #1950e8;
+}
+
+    #registerSubmit:hover {
+        transform: scale(1.05);
+        background-color: #1380df;
+    }
+
+#login-submit {
+    box-shadow: 3px 3px 3px black;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 15px;
+    background-color: #1950e8;
+}
+
+    #login-submit:hover {
+        transform: scale(1.05);
+        background-color: #1380df;
+    }
+
+a {
+    color: #036bc7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-btn, .card-del-btn, #enable-authenticator, #change-email-button, #update-profile-button {
+    font-size: 17px !important;
+    transition: background-color 0.3s, transform 0.3s, background-color 0.3s !important;
+    border: 2px solid #333333 !important;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #007BFF;
+    word-wrap: normal;
+    margin: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    height: fit-content;
+}
+
+    .card-btn:hover, #enable-authenticator:hover, #change-email-button:hover, #update-profile-button:hover {
+        transform: scale(1.05) !important;
+        border: 2px solid white !important;
+        background-color: white;
+    }
+
+.card-del-btn {
+    background-color: #FF605C !important;
+    color: white;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    height: fit-content;
+}
+
+    .card-del-btn:hover {
+        transform: scale(1.05);
+        border: 2px solid #333333;
+        background-color: #D84841 !important;
+        color: white;
+    }
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer-text-mod {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+.back-to-list-text {
+    font-size: 18px;
+    font-weight: bolder;
+    transition: font-size 0.3s;
+}
+
+    .back-to-list-text:hover {
+        font-size: 20px;
+        height: 40px;
+    }
+
+.container {
+    min-height: 90%;
+    height: auto;
+}
+
+.dark-theme, html {
+    margin: 0;
+    padding: 0;
+    background-color: #9394a5;
+    font-size: 14px;
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+.content {
+    min-height: calc(100% - 40px);
+    padding-bottom: 40px;
+}
+
+#footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: inherit;
+}
+
+#profile, #personal-data, #email, #change-password, #two-factor {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    color: #333333 !important;
+    margin: 15px 0 !important;
+}
+
+#email-verification {
+    background-color: #3459E6 !important;
+    color: white !important;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #333333;
+    font-weight: bolder !important;
+    margin-top: 12px;
+}
+
+    #email-verification:hover {
+        transform: scale(1.05);
+        border: 2px solid #333333;
+    }
+
+h1, h2, h3 {
+    font-weight: bolder;
+    font-size: 34px;
+    color: #333333;
+    margin: 15px 0;
+}
+
+p, h4 {
+    color: #333333;
+    font-weight: bolder;
+}
+
+#download-data, #delete {
+    font-size: 15px !important;
+    transition: transform 0.3s;
+    display: inline-block !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    word-break: break-word !important;
+    margin: 5px;
+}
+
+    #download-data:hover, #delete:hover {
+        transform: scale(1.05);
+    }
+
+.custom-toggler {
+    background-color: white;
+    border: 1px solid #fff;
+}
+
+.add-student-screen {
+    color: #333333;
+    font-weight: bolder;
+}
+
+.add-student-body {
+    background-color: #78A992;
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+}
+
+.add-student-head, .add-student-footer {
+    background-color: #333333;
+    border: 1px solid white;
+}
+
+.del-student-screen {
+    color: #333333;
+    font-weight: bolder;
+    border: 1px solid #333333;
+}
+
+.del-student-head {
+    background-color: lightgrey;
+}
+
+.del-student-footer {
+    background-color: lightgrey;
+}

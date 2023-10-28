@@ -1,0 +1,53 @@
+﻿@using HackHeroes.Application.HackHeroes.Commands.Students;
+@using HackHeroes.Application.HackHeroes.Commands.Students.DeleteStudent;
+@model IEnumerable<HackHeroes.Application.HackHeroes.StudentDto>            //Widok wyswietlania uczniow klasy
+
+@{
+    ViewData["Title"] = "ShowStudents";
+    var encodedName = ViewContext.RouteData.Values["encodedName"] as string;
+
+}
+
+<h1 class="text-light">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list-nested" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+    </svg> Uczniowie...
+</h1>
+
+<button type="button" class="btn btn-primary d-inline-block  add-classes-btn btn-create-classes" data-bs-toggle="modal" data-bs-target="#addStudentModal">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 18 18">
+        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+    </svg> Dodaj Ucznia / Uczennice
+</button>
+
+
+<p>
+    <partial name="_AddStudent" model="new AddStudentCommand() {ClassEncodedName = encodedName!}" />
+</p>
+
+<p>
+    <partial name="_DeleteStudent" model="new DeleteStudentCommand() " />
+</p>
+
+
+<div id="students" class="row" data-encoded-name="@encodedName">
+</div>
+
+
+
+
+
+
+
+<div class="btn-group">
+    <a asp-action="ClassIndex" class="btn btn-primary sub-btn card-btn" style="white-space: nowrap;">Powrót</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/HackHeroes/Students.js"></script>
+}
+
+

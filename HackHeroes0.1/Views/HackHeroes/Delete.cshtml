@@ -1,0 +1,32 @@
+﻿@model HackHeroes.Application.HackHeroes.Commands.Classes.DeleteClass.DeleteClassCommand
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="your-classes-text">Usuń</h1>
+
+<h3 class="your-classes-text">Jesteś pewien czy chcesz usunąć tą klasę?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2" style="font-size: 25px; color: #333333;">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10" style="font-size: 25px; color: #333333;">
+
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+
+    <form asp-action="Delete">
+
+        <div class="btn-group">
+            <input type="submit" value="Delete" class="btn btn-danger card-del-btn" /> |
+            <a asp-action="ClassIndex" class="btn btn-primary sub-btn card-btn" style="white-space: nowrap;">Powrót</a>
+        </div>
+    </form>
+</div>
+
+

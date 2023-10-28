@@ -1,0 +1,51 @@
+﻿@model HackHeroes.Application.HackHeroes.Commands.Students.AddStudentCommand
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade " id="addStudentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content add-student-screen">
+            <form asp-action="AddStudent">
+                <div class="modal-header add-student-head d-flex justify-content-between align-items-center">
+                    <h1 class="modal-title fs-5 text-white text-center" id="staticBackdropLabel">Dodaj ucznia do klasy</h1>
+                </div>
+                <div class="modal-body add-student-body">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input asp-for="ClassEncodedName" class="form-control" type="hidden" />
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label"> Imie </label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label"> Nazwisko </label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                        <input type="hidden" value="1" asp-for="Number" class="form-control" />
+                    <input asp-for="StudentKey" class="form-control" type="hidden" />
+                </div>
+                <div class="modal-footer add-student-footer">
+                    <div class="btn-group">
+                    <input type="submit" value="Dodaj" data-bs-dismiss="modal" class="btn btn-primary card-btn" />
+                        <button type="button" class="btn btn-secondary card-del-btn" data-bs-dismiss="modal" style="white-space: nowrap;">Zamknij</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    @{
+
+    }
+}

@@ -1,0 +1,232 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    min-height: 100%;
+}
+
+
+.gradient {
+    /* background: rgb(28,18,182);
+    background: linear-gradient(90deg, rgba(28,18,182,1) 41%, rgba(28,98,244,1) 88%); */
+    background: rgb(14,8,115);
+    background: linear-gradient(90deg, rgba(14,8,115,1) 41%, rgba(5,18,46,1) 88%);
+}
+
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature {
+    color: #fff;
+}
+
+    .feature ul {
+        padding-left: 2rem;
+        list-style-type: none;
+    }
+
+        .feature ul li {
+            padding-left: 2rem;
+            background-image: url(../img/check.svg);
+            background-repeat: no-repeat;
+            margin: 1rem 0;
+            line-height: 1.5rem;
+        }
+
+.icon {
+    color: #fff;
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    background-color: whitesmoke;
+}
+
+    .gallery img {
+        border-radius: 5%;
+    }
+
+.services {
+    color: #fff;
+}
+
+    .services h1 {
+        margin-bottom: 1.5rem;
+    }
+
+footer {
+    color: #fff;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.registrationBtn {
+    color: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background: rgb(28,18,182);
+    background: linear-gradient(90deg, rgba(28,18,182,1) 41%, rgba(28,98,244,1) 88%);
+    font-weight: 700;
+    border: none;
+    transition: all 0.3s;
+    margin-bottom: 5%;
+}
+
+
+/* Animacje */
+
+.revealY {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease-out;
+}
+
+    .revealY.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+.revealX {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 1.5s ease-in;
+}
+
+    .revealX.transition-right {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+/* Animacja z lewej */
+
+.revealsXFromLeft {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 1.5s ease-in;
+}
+
+    .revealsXFromLeft.transition-left {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+.navbar-kazi {
+    background-color: #18122B;
+    text-decoration-color: white;
+    color: white;
+    border: none;
+}
+
+.text-navbar-kazi {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    justify-self: center;
+    text-shadow: 1px -1px 6px rgba(4, 4, 4, 1);
+}
+
+    .text-navbar-kazi:hover, .text-navbar-kazi:focus {
+        color: rgb(0, 140, 255);
+        transform: translateY(-2px);
+        transition: transform 330ms ease-in-out;
+    }
+
+.hello-kazi {
+    display: flex;
+}
+
+.light-theme, html {
+    background-color: #443C68;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    height: 100%;
+}
+.card-div-kazi {
+    background-color: #393053;
+    border: #635985 solid 2px;
+
+}
+
+.card-body-kazi {
+    background-color: #393053;
+}
+
+.uczniowie-kazi {
+    background-color: #74879c;
+}
+.card-title {
+    margin-top: 5%;
+}
+.theme-btn-kazi {
+    justify-self: center;
+    align-self: center;
+    border: none;
+    background-color: transparent;
+    place-items: center;
+    justify-content: center;
+     display: flex;
+}
+.dark-theme-kazi-btn {
+    background-color: #635985;
+    font-size: 17px !important;
+    transition: background-color 0.3s, transform 0.3s, background-color 0.3s !important;
+    border: 2px solid #333333 !important;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    word-wrap: normal;
+    margin: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    height: fit-content;
+}
+.dark-theme-kazi-btn:hover {
+    transform: scale(1.05) !important;
+        border: 2px solid rgba(245, 245, 245, 0.61) !important;
+        background-color: rgba(117, 69, 156, 0.685);
+}
+
+.dark-theme-kazi-add-btn {
+    text-decoration: none;
+    border: none;
+    font-size: 16px !important;
+    background-color: #18122B;
+    color: white;
+    font-weight: bolder;
+}
+.dark-theme-kazi-add-btn:hover {
+    background-color: #362f57;
+}

@@ -1,0 +1,33 @@
+﻿@model HackHeroes.Application.HackHeroes.Commands.Classes.EditClass.EditClassCommand
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<h1 class="your-classes-text">Edytuj</h1>
+
+<h4 class="your-classes-text">Panel edycji klas:</h4>
+<hr style="color:transparent;"/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label" style="font-size: 20px; color: #333333; font-weight: bolder;"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="btn-group">
+                    <input type="submit" value="Zapisz" class="btn btn-primary sub-btn card-btn" />
+                    <a asp-action="ClassIndex" class="btn btn-primary sub-btn card-btn" style="white-space: nowrap;">Powrót</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
